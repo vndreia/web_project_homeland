@@ -100,17 +100,19 @@
     padding: 0 24px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+
   }
 
   .main__title {
-    width: 707px;
+    width: 100%;
     height: 147px;
     font-family: Inter, sans-serif;
     font-weight: 900;
-    font-size: 45x;
+    font-size: 45px;
     line-height: 49px;
     text-align: left;
+
   }
 
   .main__quote {
@@ -143,7 +145,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 163%;
-    margin-top: 32px auto 0;
+
   }
 }
 
