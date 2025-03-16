@@ -1,0 +1,152 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__image {
+  max-width: 984px;
+  width: 100%;
+  height: 515px;
+  margin: 0 auto;
+}
+
+.main__wrapper {
+  height: auto;
+  width: 984px;
+  margin: 92px auto 0;
+  text-align: start;
+}
+
+.main__title {
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  width: 830px;
+  height: auto;
+  margin-top: 0;
+  text-align: left;
+}
+
+.main__quote {
+  max-width: 738px;
+  height: 135px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  position: relative;
+  text-align: left;
+  margin: 40px 0 0;
+}
+
+.main__quote cite {
+  width: 732px;
+  height: 33px;
+  display: block;
+  font-style: normal;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.main__text {
+  width: 722px;
+  height: 182px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  margin: 76px 0 0;
+}
+
+.footer {
+  margin: 92px auto 24px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__image {
+    width: 100%;
+    max-width: 768px;
+    height: 480px;
+  }
+
+  .main__wrapper {
+    max-width: 720px;
+    height: 573px;
+    margin: 90px auto 0;
+    box-sizing: border-box;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main__title {
+    width: 707px;
+    height: 147px;
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    font-size: 45x;
+    line-height: 49px;
+    text-align: left;
+  }
+
+  .main__quote {
+    width: 720px;
+    width: 100%;
+    height: 136px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 50px auto 0;
+  }
+
+  .main__quote cite {
+    width: 100%;
+    height: 34px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: end;
+    box-sizing: border-box;
+  }
+
+  .main__text {
+    width: 100%;
+    height: 182px;
+    text-align: justify;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    margin-top: 32px auto 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}
