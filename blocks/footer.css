@@ -26,3 +26,24 @@
     line-height: 16px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .footer {
+    margin: 0 auto 24px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .footer__copyright {
+    width: 194px;
+    height: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    padding: unset;
+  }
+}
