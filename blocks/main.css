@@ -1,24 +1,24 @@
-.main {
+.content {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.main__image {
+.content__image {
   max-width: 984px;
   width: 100%;
   height: 515px;
   margin: 0 auto;
 }
 
-.main__wrapper {
+.content__wrapper {
   height: auto;
   width: 984px;
   margin: 92px auto 0;
   text-align: start;
 }
 
-.main__title {
+.content__title {
   font-family: Inter, sans-serif;
   font-weight: 900;
   font-size: 54px;
@@ -29,7 +29,7 @@
   text-align: left;
 }
 
-.main__quote {
+.content__quote {
   max-width: 738px;
   height: 135px;
   font-family: Inter, sans-serif;
@@ -41,7 +41,7 @@
   margin: 40px 0 0;
 }
 
-.main__quote_cite-name-right {
+.content__quote_cite-name-right {
   width: 732px;
   height: 33px;
   display: block;
@@ -54,7 +54,7 @@
   margin-top: 10px;
 }
 
-.main__text {
+.content__text {
   width: 722px;
   height: 182px;
   font-family: Inter, sans-serif;
@@ -67,20 +67,20 @@
 
 
 @media screen and (max-width: 768px) {
-  .main {
+  .content {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .main__image {
+  .content__image {
     width: 100%;
     max-width: 768px;
     height: 480px;
   }
 
-  .main__wrapper {
+  .content__wrapper {
     max-width: 720px;
     height: 573px;
     margin: 90px auto 0;
@@ -92,7 +92,7 @@
 
   }
 
-  .main__title {
+  .content__title {
     width: 100%;
     height: 147px;
     font-family: Inter, sans-serif;
@@ -103,7 +103,7 @@
 
   }
 
-  .main__quote {
+  .content__quote {
     width: 720px;
     width: 100%;
     height: 136px;
@@ -114,7 +114,7 @@
     margin: 50px auto 0;
   }
 
-  .main__quote_cite-name-right {
+  .content__quote_cite-name-right {
     width: 100%;
     height: 34px;
     font-family: Inter, sans-serif;
@@ -126,7 +126,7 @@
     margin: unset;
   }
 
-  .main__text {
+  .content__text {
     width: 100%;
     height: 182px;
     text-align: justify;
@@ -139,18 +139,18 @@
 }
 
 @media screen and (max-width: 320px) {
-  .main {
+  .content {
     margin: 0;
   }
 
-  .main__image {
+  .content__image {
     width: 100%;
     max-width: 320px;
     height: 200px;
     margin: 40px auto 0;
   }
 
-  .main__wrapper {
+  .content__wrapper {
     max-width: 288px;
     height: auto;
     padding: unset;
@@ -162,7 +162,7 @@
     /*border: 2px solid red; */
   }
 
-  .main__title {
+  .content__title {
     font-family: Inter, sans-serif;
     font-weight: 900;
     font-size: 32px;
@@ -171,7 +171,7 @@
     margin-top: 0;
   }
 
-  .main__quote {
+  .content__quote {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -180,14 +180,14 @@
     height: 300px;
   }
 
-  .main__quote_cite-name-right {
+  .content__quote_cite-name-right {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
   }
 
-  .main__text {
+  .content__text {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
