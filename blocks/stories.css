@@ -4,17 +4,18 @@
   width: 100%;
   height: auto;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
- .stories__container {
- display: grid;
- /*margin-top: 80px auto 0;  that didn´t work because grid doesn´t behave as a standard block element*/
- grid-template-columns: repeat(2, 1fr);
- grid-template-rows: auto auto auto;
- grid-template-areas:
-   "header description"
-   "image description"
-   "button description";
+.stories__container {
+  display: grid;
+  /*margin-top: 80px auto 0;  that didn´t work because grid doesn´t behave as a standard block element*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header description"
+    "image description"
+    "button description";
   gap: 48px 40px;
   width: 100%;
   max-width: 984px;
@@ -25,14 +26,11 @@
 
 .stories__container-header {
   grid-area: header;
-
 }
-
 
 .stories__container-image {
- grid-area: image;
+  grid-area: image;
 }
-
 
 .stories__container-description {
   grid-area: description;
@@ -46,19 +44,19 @@
 }
 
 .stories__header-title {
-width: 460px;
-height: 152px;
-font-size: 72px;
-line-height: 76px;
-font-weight: 900;
-font-family: "Inter", sans-serif;
-text-align: left;
+  width: 460px;
+  height: 152px;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  text-align: left;
 }
 
 .stories__item {
   max-width: 460px;
   max-height: 460px;
-  box-shadow: 8px 8px 10px rgb(0, 0, 0)
+  box-shadow: 8px 8px 10px rgb(0, 0, 0);
 }
 
 span {
@@ -68,28 +66,72 @@ span {
   line-height: 1.5;
   letter-spacing: 5px;
   text-transform: uppercase;
-
 }
 
 .stories__paragraph {
   font-family: "Inter", sans-serif;
-font-weight: 400px;
-font-size: 18px;
-line-height: 1.8;
-letter-spacing: 0%;
-margin-bottom: 46px;
-
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0%;
+  margin-bottom: 46px;
 }
 .stories__button {
   width: 289px;
   height: 48px;
   border-radius: 7px;
-  background-image: linear-gradient(90deg, #0278FE, #003A7B);
+  background-image: linear-gradient(90deg, #0278fe, #003a7b);
   color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 600px;
   border: none;
   box-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
 
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .stories__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .stories__container-header {
+    margin-top: 62px;
+    max-width: 288px;
+    height: 35px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 1;
+  }
+
+  .stories__artist {
+    grid-row: 2;
+  }
+
+  .stories__container-image {
+    width: 320px;
+    height: 320px;
+    order: 3;
+  }
+
+  .stories__container-description {
+    order: 4;
+  }
+
+  .stories__container-button {
+    order: 5;
+  }
+
+  .stories__item {
+    width: 100%;
+    height: 100%;
+    box-shadow: unset;
+  }
+
+  .stories__header-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
 }
