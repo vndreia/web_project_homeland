@@ -3,11 +3,12 @@
   justify-content: center;
   width: 100%;
   height: auto;
+  flex-direction: column;
 }
 
  .stories__container {
  display: grid;
- margin-top: 92px;
+ /*margin-top: 80px auto 0;  that didn´t work because grid doesn´t behave as a standard block element*/
  grid-template-columns: repeat(2, 1fr);
  grid-template-rows: auto auto auto;
  grid-template-areas:
@@ -18,6 +19,8 @@
   width: 100%;
   max-width: 984px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stories__container-header {
