@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .stories__container {
@@ -90,5 +91,52 @@ span {
 }
 
 .stories__button:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .stories__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .stories__container-header {
+    margin-top: 62px;
+    max-width: 288px;
+    height: 35px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 1;
+  }
+
+  .stories__artist {
+    grid-row: 2;
+  }
+
+  .stories__container-image {
+    width: 320px;
+    height: 320px;
+    order: 3;
+  }
+
+  .stories__container-description {
+    order: 4;
+  }
+
+  .stories__container-button {
+    order: 5;
+  }
+
+  .stories__item {
+    width: 100%;
+    height: 100%;
+    box-shadow: unset;
+  }
+
+  .stories__header-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
 }
