@@ -1,72 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galeria de arte TripleTen" />
     <meta name="author" content="Andrea Palacios" />
-    <meta
-      name="keywords"
-      content="art, technology, project, figma, design, marketing, landpage"
-    />
-    <meta name="description" content="online art gallery">
-    <link rel="stylesheet" href="pages/index.css" />
-    <link rel="icon" href="favicon.ico" />
-    <title>Homeland</title>
+    <meta name="keywords" content="CSS, Html, Figma" />
+    <title>Homeland page</title>
+    <link rel="shortcut icon" href="images/Group-13.svg" />
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <div class="header__wrapper">
-          <img
-            src="images/Group-13.svg"
-            class="header__logo"
-            alt="Logo de Homeland"
-          />
-          <img
-            src="images/Group-12.svg"
-            class="header__logo--title"
-            alt="Letras de Homeland"
-          />
-        </div>
-        <h1 class="header__title">De patria a patria</h1>
-        <h2 class="header__subtitle">
-          Un viaje épico de Kentucky a Burundi pasando por Gales y Ucrania
-        </h2>
-      </header>
-      <main class="content">
-        <section>
-          <img
-            src="https://raw.githubusercontent.com/vndreia/web_project_homeland/main/images/_image.png"
-            class="content"
-            alt="Foto de playa en Gales"
-          />
-          <div class="content__wrapper">
-            <h2 class="content__title">
-              Conoce un poco mejor los lugares de los que proceden tus colegas
-              en línea
-            </h2>
-            <p class="content__quote">
-              Todo ser humano es un artista, un ser de la libertad, llamado a
-              participar en la transformación y reforma de las condiciones, el
-              pensamiento y las estructuras que conforman e influyen en nuestras
-              vidas.
-            </p>
-            <p class="content__quote content__quote_cite-name-right">
-              — Joseph Beuys
-            </p>
-
-            <p class="content__text">
-              La ciudad de TripleTen ha reunido a profesionales de diferentes
-              rincones del mundo. Hoy, la Galería de Arte TripleTen se
-              enorgullece de presentar historias y fotografías de algunas de las
-              personas que dedican su tiempo y esfuerzo a hacer que los futuros
-              profesionales de la tecnología de esta ciudad se sientan como en
-              casa. Cada uno de nosotros tiene una historia única sobre el lugar
-              del que procede. No dudes en añadir a nuestra colección tu propia
-              historia y una obra de arte visual dedicada a tu ciudad natal. No
-              importa de dónde seas, nos alegra que seas nuestro vecino.
-            </p>
+        <img src="./images/logo.svg" alt="logo-galeria" class="header__logo" />
+        <section class="header__content">
+          <h1 class="header__title">De patria a
+             patria</h1>
+          <p class="header__subheading">
+            Un viaje épico de Kentucky a Burundi pasando por Gales y Ucrania
+          </p>
+          <div class="header__content-image">
+            <img
+              src="https://github.com/vndreia/web_project_homeland/blob/main/images/_image.png?raw=true"
+              alt="Paisaje"
+              class="header__image"
+            />
           </div>
+        </section>
+      </header>
+
+      <main class="content">
+        <section class="main">
+          <h2 class="main__title">
+            Conoce un poco mejor los lugares de los que proceden tus colegas en
+            línea
+          </h2>
+          <p class="main__paragraph main__paragraph_quote-text_left">
+            Todo ser humano es un artista, un ser de la libertad, llamado a
+            participar en la transformación y reforma de las condiciones, el
+            pensamiento y las estructuras que conforman e influyen en nuestras
+            vidas.
+          </p>
+          <p class="main__paragraph main__paragraph_quote-name_right">
+            &#x2015; Joseph Beuys
+          </p>
+          <p class="main__paragraph main__paragraph_size-s">
+            La ciudad de TripleTen ha reunido a profesionales de diferentes
+            rincones del mundo. Hoy, la Galería de Arte TripleTen se enorgullece
+            de presentar historias y fotografías de algunas de las personas que
+            dedican su tiempo y esfuerzo a hacer que los futuros profesionales
+            de la tecnología de esta ciudad se sientan como en casa. Cada uno de
+            nosotros tiene una historia única sobre el lugar del que procede. No
+            dudes en añadir a nuestra colección tu propia historia y una obra de
+            arte visual dedicada a tu ciudad natal. No importa de dónde seas,
+            nos alegra que seas nuestro vecino.
+          </p>
+        </section>
+        <section class="gallery">
+          <img
+            class="gallery__item"
+            src="images/__item.jpg"
+            alt="small town bay"
+          />
+          <img
+            class="gallery__item"
+            src="images/__item2.jpg"
+            alt="blue sky town"
+          />
+
+          <img
+            class="gallery__item"
+            src="images/__item3.jpg"
+            alt="cathedral"
+          />
+
+          <img
+            class="gallery__item"
+            src="images/__item4.jpg"
+            alt="city twilight"
+          />
+
+          <img
+            class="gallery__item"
+            src="images/__item5.jpg"
+            alt="green grass countryside"
+          />
+
+          <img
+            class="gallery__item"
+            src="images/__item6.jpg"
+            alt="green park"
+          />
+
+          <img
+            class="gallery__item"
+            src="images/__item7.jpg"
+            alt="ecologic house"
+          />
+
+          <img
+            class="gallery__item"
+            src="images/__item9.jpg"
+            alt="sustainable homes"
+          />
+        </section>
+        <section class="stories">
+          <div class="stories__container">  <!--Es la misma clase para next cards-->
+            <div class="stories__container-header">
+              <h2 class="stories__header-title">Cricieth, Gales</h2>
+            </div>
+            <div class="stories__container-image">
+              <img
+                src="./images/__image10.jpg"
+                alt="bay city"
+                class="stories__item">
+            </div>
+              <div class="stories__container-description">
+                <span>Artistas</span>
+                <p class="stories__paragraph">
+                  Stefan Warren, editor jefe <br />
+                  Kseniya Gladoleva, gerente de proyectos
+                </p>
+                <p class="stories__paragraph">
+                  Las ruinas medievales del castillo de Cricieth dominan la
+                  ciudad desde una roca que extiende sobre el mar. Se cree que
+                  fue construido por Llewelyn el Grande en el S. XIII. 800 años
+                  después, la autodenominada Perla de Gales en las costas de
+                  Snowdonia, se ha convertido en un popular destino turístico
+                  durante los meses de verano.
+                </p>
+                <p class="stories__paragraph">
+                  A pocos pasos de camino al castillo, puedes disfrutar de los
+                  mejores helados del mundo en Cadwalader's, cuyo ingrediente
+                  secreto se rumorea que son algas marinas de la localidad. Otra
+                  cosa por la que es famosa Cricieth es por haber ganado el
+                  premio *Gales en flor* durante cinco años seguidos por sus
+                  espectaculares muestras florales alrededor de la ciudad.
+                  También vio nacer a David Lloyd George, el único galés que ha
+                  sido Primer Ministro del Reino Unido.
+                </p>
+              </div>
+            <div class="stories__container-button">
+              <a href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq" target="_blank">
+                <button type="submit" class="stories__button">Compra esta obra como NFT</button>
+              </a>
+              </button>
+            </div>
+            </div>
+          </div>
+          <!--El esqueleto con contenido vacío:
+          <div class="stories__container">
+  <div class="stories__container-header">
+    <h2 class="stories__header-title"></h2>
+  </div>
+  <div class="stories__container-image">
+    <img
+      src=""
+      alt=""
+      class="stories__item">
+  </div>
+  <div class="stories__container-description">
+    <span></span>
+    <p>
+      <br />
+    </p>
+    <p class="stories__paragraph">
+    </p>
+    <p class="stories__paragraph">
+    </p>
+  </div>
+  <div class="stories__container-button">
+    <button type="submit" class="stories__button"></button>
+  </div>
+</div>
+
+          -->
         </section>
       </main>
       <footer class="footer">
