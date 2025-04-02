@@ -36,6 +36,8 @@
   text-align: left;
   font-size: 16px;
   line-height: 1.6;
+  margin-top: 35px;
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
@@ -57,7 +59,7 @@
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .main {
     max-width: 720px;
-    margin: 90px 24px 64px;
+    margin: 90px 24px 0;
   }
 
   .main__title {
