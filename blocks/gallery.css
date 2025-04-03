@@ -1,16 +1,15 @@
 .gallery {
   display: grid;
-  max-width: 1184px;
+  max-width: 1190px;
   height: 442px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px repeat(2, 1fr);
   gap: 16px;
-  margin: 0 auto;
+
 }
 
 .gallery__item {
-  max-width: 284px;
-  height: 213px;
+width: 100%;
 }
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
@@ -21,7 +20,7 @@
     height: 1104px;
     align-content: center;
     justify-content: center;
-    margin: 0 24px 88px;
+    margin: 0 auto;
   }
   .gallery__item {
     max-width: 352px;
