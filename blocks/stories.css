@@ -81,10 +81,9 @@
 
 .stories__paragraph {
   font-family: "Inter", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
-  letter-spacing: 0%;
   margin: 0;
 }
 
@@ -96,7 +95,7 @@
   color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   border: none;
   box-shadow: 6px 6px 10px rgb(0, 0, 0);
 }
@@ -108,12 +107,11 @@
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .stories__container {
     max-width: 720px;
-    min-height: 2900;
+    min-height: 2900px;
     grid-gap: 48px 20px;
     margin: 70px auto 0;
-     grid-template-rows: auto 350px auto;
+    grid-template-rows: auto 350px auto;
     box-sizing: border-box;
-
   }
 
   .stories__header-title {
@@ -127,7 +125,6 @@
   .stories__button {
     width: 289px;
     height: 48px;
-
   }
 
   .stories__container-artists {
@@ -136,8 +133,8 @@
   }
 
   .stories__paragraph {
-    width: 352;
-    height: 208;
+    width: 352px;
+    height: 208px;
     font-size: 15px;
   }
 
@@ -147,35 +144,73 @@
   }
 
   .stories__item {
-    width: 100%
+    width: 100%;
   }
 
   .stories__container-long {
     margin-bottom: 180px;
   }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
   .stories__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 90px auto auto 50px;
-    /* header-title, stories__container-artists, stories__container-image
-      stories, description; */
-
+    grid-template-rows: 30px auto 320px 3fr 50px;
+    grid-template-areas:
+      "header"
+      "subtitle"
+      "image"
+      "description"
+      "button";
+    max-width: 320px;
+    height: auto;
+    gap: 30px;
   }
 
   .stories__header-title {
+    grid-area: header;
     max-width: 288px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .stories__container-artists {
+    grid-area: subtitle;
+    width: 100%;
+    max-width: 288px;
+    height: 68px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
   }
 
   .stories__container-image {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 320px;
+    grid-area: image;
+  }
+
+  .stories__container-description {
+    grid-area: description;
+  }
+
+  .stories__paragraph {
+    width: 100%;
+    max-width: 288px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+
+  .stories__container-button {
+    grid-area: button;
   }
 
   .stories__item {
