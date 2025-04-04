@@ -89,28 +89,31 @@
 
 .stories__button {
   width: 289px;
-  height: 48px;
-  border-radius: 7px;
-  background-image: linear-gradient(90deg, #0278fe, #003a7b);
+  padding: 15px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 600;
   border: none;
-  box-shadow: 6px 6px 10px rgb(0, 0, 0);
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+
 }
 
 .stories__button:hover {
-  opacity: 0.6;
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%)
 }
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .stories__container {
     max-width: 720px;
-    min-height: 2900px;
+    min-height: unset;
     grid-gap: 48px 20px;
     margin: 70px auto 0;
-    grid-template-rows: auto 350px auto;
+    grid-template-rows: 100px 350px auto;
     box-sizing: border-box;
   }
 
@@ -124,7 +127,6 @@
 
   .stories__button {
     width: 289px;
-    height: 48px;
   }
 
   .stories__container-artists {
