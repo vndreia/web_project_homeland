@@ -158,17 +158,19 @@
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
   .stories__container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 90px auto auto 50px;
+    /* header-title, stories__container-artists, stories__container-image
+      stories, description; */
+
   }
 
-  .stories__container-header {
-    margin-top: 62px;
+  .stories__header-title {
     max-width: 288px;
-    height: 35px;
-    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
   }
 
   .stories__container-image {
